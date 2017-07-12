@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.darrylssy.monsuki.RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/registertemplate" />
+
+    <EditText
+        android:id="@+id/editUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="17"
+        android:onClick="clickRegister"
+        android:text="Sign Up"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80000000"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="By signing up, you accept the\n Terms and Conditions"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/button"
+        android:clickable="true"
+        android:onClick="clickTerms"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_close_white_1024dp_1x"
+        android:layout_marginLeft="306dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginBottom="516dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:clickable="true"
+        android:onClick="clickBack"
+        android:layout_toEndOf="@+id/textView3" />
+
+</RelativeLayout>
